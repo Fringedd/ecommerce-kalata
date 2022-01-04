@@ -435,18 +435,18 @@ h1 {
 
 /*Mobile*/
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 420px) {
   body {
-    width: 376px;
+    width: 420px;
     height: 1200px;
   }
   header {
-    width: 376px;
+    width: 420px;
     justify-content: space-evenly;
     padding: 1rem;
   }
   .all {
-    width: 376px;
+    width: 420px;
   }
   #nav-left {
     display: none;
@@ -469,7 +469,7 @@ h1 {
     margin-left: 1.5rem;
   }
   #mainy {
-    width: 376px;
+    width: 420px;
     padding: 0;
     display: flex;
     /* align-items: center; */
