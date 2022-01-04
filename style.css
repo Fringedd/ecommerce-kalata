@@ -426,7 +426,7 @@ h1 {
   display: none;
 }
 .picture-item-visible {
-  display: visible;
+  display: block;
 }
 
 .im:hover {
