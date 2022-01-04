@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all">
+      <div class="mob-modal-menu">
+        <div class="closy">
+          <img src="./images/icon-close.svg" alt="" />
+        </div>
+        <ul id="nav-ul-mob">
+          <li><a href="">Collections</a></li>
+          <li><a href=""> Men</a></li>
+          <li><a href="">Women</a></li>
+          <li id="clicky"><a href=""> About</a></li>
+          <li><a href=""> Contact</a></li>
+        </ul>
+      </div>
+      <div class="overlay hidden" id="overLay"></div>
+      <header id="head">
+        <div class="content">
+          <div class="imigy">
+            <img id="hamburger" src="./images/icon-menu.svg" alt="" />
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <nav id="nav-left">
+            <ul id="nav-ul">
+              <li><a href="">Collections</a></li>
+              <li><a href=""> Men</a></li>
+              <li><a href="">Women</a></li>
+              <li id="clicky"><a href=""> About</a></li>
+              <li><a href=""> Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right">
+          <nav id="nav-right">
+            <ul>
+              <li id="cart" class="carter">
+                <div class="circler" id="ciR">
+                  <p id="coU">3</p>
+                </div>
+                <img src="./images/icon-cart.svg" alt="" />
+              </li>
+              <div class="modal1">
+                <h5>Cart</h5>
+                <div class="main-modal">
+                  <h6 id="emptyCard">Your card is empty.</h6>
+                  <div class="fullCart">
+                    <div class="cartImg1">
+                      <img
+                        src="./images/image-product-1-thumbnail.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="textCart">
+                      <h6>Fall Limited Edition Sneakers</h6>
+                      <h6>
+                        $
+                        <span id="money3" class="mon"></span> x
+                        <span id="quantity2" class="quanty"></span> $<span
+                          id="multiplied"
+                          class="multi"
+                        ></span>
+                      </h6>
+                    </div>
+                    <div class="thrashImg" id="thrash">
+                      <img src="./images/icon-delete.svg" alt="" />
+                    </div>
+                  </div>
+                  <button id="checkO" type="button">Checkout</button>
+                </div>
+              </div>
+              <li>
+                <div class="img-cont">
+                  <img src="./images/image-avatar.png" alt="" />
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main id="mainy">
+        <div class="modalimus invisible" id="modalimuss">
+          <button class="close-modal" id="xModal">&times;</button>
+          <div class="arrow" id="lArrow">
+            <img src="./images/icon-previous.svg" alt="" />
+          </div>
+          <div class="arrow" id="rArrow">
+            <img src="./images/icon-next.svg" alt="" />
+          </div>
+          <div class="picture-item picture-item-visible">
+            <img src="./images/image-product-1.jpg" alt="" />
+          </div>
+          <div class="picture-item">
+            <img src="./images/image-product-2.jpg" alt="" />
+          </div>
+          <div class="picture-item">
+            <img src="./images/image-product-3.jpg" alt="" />
+          </div>
+          <div class="picture-item">
+            <img src="./images/image-product-4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="left">
+          <div class="product1">
+            <div id="mob-lArrow" class="arrow">
+              <img src="./images/icon-previous.svg" alt="" />
+            </div>
+            <div id="mob-rArrow" class="arrow">
+              <img src="./images/icon-next.svg" alt="" />
+            </div>
+            <div class="picture-item2 picture-item2-visible">
+              <img src="./images/image-product-1.jpg" alt="" />
+            </div>
+            <div class="picture-item2">
+              <img src="./images/image-product-2.jpg" alt="" />
+            </div>
+            <div class="picture-item2">
+              <img src="./images/image-product-3.jpg" alt="" />
+            </div>
+            <div class="picture-item2">
+              <img src="./images/image-product-4.jpg" alt="" />
+            </div>
+            <img src="./images/image-product-1.jpg" id="desktop-img" alt="" />
+            <ul id="producT">
+              <li id="image1" class="imigi">
+                <img
+                  class="im"
+                  src="./images/image-product-1-thumbnail.jpg"
+                  alt=""
+                />
+              </li>
+              <li id="image2" class="imigi">
+                <img
+                  class="im"
+                  src="./images/image-product-2-thumbnail.jpg"
+                  alt=""
+                />
+              </li>
+              <li id="image3" class="imigi">
+                <img
+                  class="im"
+                  src="./images/image-product-3-thumbnail.jpg"
+                  alt=""
+                />
+              </li>
+              <li id="image4" class="imigi">
+                <img
+                  class="im"
+                  src="./images/image-product-4-thumbnail.jpg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="text-content">
+            <h5>SNEAKER COMPANY</h5>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p>
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <div class="price">
+              <h3>$<span>125.00</span></h3>
+              <div class="percent"><p>50%</p></div>
+            </div>
+            <div class="quantityCart">
+              <div class="quantity">
+                <button id="leftB" type="button">
+                  <img src="./images/icon-minus.svg" alt="" />
+                </button>
+                <span id="quantity1">0</span>
+                <button id="rightB">
+                  <img src="./images/icon-plus.svg" alt="" />
+                </button>
+              </div>
+              <div class="cart2">
+                <div class="cartImg">
+                  <img src="./images/icon-cart.svg" alt="" />
+                </div>
+
+                <div class="add"><p>Add to Cart</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!--
+Collections Men Women About Contact Sneaker Company Fall Limited Edition
+    Sneakers These low-profile sneakers are your perfect casual wear companion.
+    Featuring a durable rubber outer sole, they’ll withstand everything the
+    weather can offer. $125.00 50% $250.00 0 Add to cart
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    -->
+    <script src="./script.js"></script>
+  </body>
+</html>
